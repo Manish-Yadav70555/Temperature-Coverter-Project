@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="celsius">
+        <hr>
+        <h2>Temperature Converter</h2>
+        <hr>
+        <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+
+        <label>Celsius</label>
+        <input id="inputCelsius" type="number" placeholder="Celsius" onchange="temperatureConverter(this.value)"
+            onsubmit="temperatureConverter(this.value)"><input type='Submit' class="pointer">
+
+        <p>Fahrenheit:<span id="outputFahrenheit"></span></p>
+    </div>
+    <div class="Fahrenheit">
+        <hr>
+        <h3>Fahrenheit to Celsius</h3>
+        <hr>
+        <p id="text">Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+        <label>Fahrenheit</label>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" onsubmit="temperatureConverter(this.value)"
+            onchange="tempConverter(this.value)">
+        <input type='submit' class="pointer">
+
+        <p>Celsius: <span id="outputCelsius"></span></p>
+        <hr>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
